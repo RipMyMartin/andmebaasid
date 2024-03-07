@@ -46,3 +46,9 @@ create table retsept(
 
 ALTER TABLE koostis
 add FOREIGN key (retseptRetseptID int) REFERENCES retsept(retseptID);
+
+CREATE table tehtud(
+    tehtudID int primary key AUTO_INCREMENT,
+    tehtudKP date,
+    retseptID int,
+    FOREIGN key (retseptID) REFERENCES retsept(retseptID));
