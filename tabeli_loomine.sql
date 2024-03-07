@@ -42,3 +42,7 @@ create table retsept(
     kategooriaID int,
     FOREIGN KEY (kasutajaID) REFERENCES kasutaja(kasutajaID),
     FOREIGN KEY (kategooriaID) REFERENCES kategooria(kategooriaID));
+
+
+ALTER TABLE koostis
+add FOREIGN key (retseptRetseptID int) REFERENCES retsept(retseptID);
