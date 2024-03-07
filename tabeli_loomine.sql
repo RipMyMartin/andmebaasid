@@ -20,3 +20,9 @@ CREATE TABLE koostis(
     yhikID int,
     FOREIGN KEY (toiduainedID) REFERENCES toiduained(toiduainedID),
     FOREIGN KEY (yhikID) REFERENCES yhik(yhikID));
+--taveli lisamine kasutaja
+CREATE TABLE kasutaja(
+    kasutajaID int PRIMARY KEY AUTO_INCREMENT,
+    eesnimi varchar(50),
+    perenimi varchar(50),
+    email varchar(150));
