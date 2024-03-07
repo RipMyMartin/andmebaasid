@@ -26,3 +26,14 @@ CREATE TABLE kasutaja(
     eesnimi varchar(50),
     perenimi varchar(50),
     email varchar(150));
+
+create table retsept(
+    retseptID int PRIMARY KEY AUTO_INCREMENT,
+    retseptiNimi varchar(100),
+    kirjeldus varchar(200),
+    juhend text,
+    sisestatudKP date,
+    kasutajaID int,
+    kategooriaID int,
+    FOREIGN KEY (kasutajaID) REFERENCES kasutaja(kasutajaID),
+    FOREIGN KEY (kategooriaID) REFERENCES kategooria(kategooriaID));
