@@ -27,6 +27,11 @@ CREATE TABLE kasutaja(
     perenimi varchar(50),
     email varchar(150));
 
+--tabeli loomine kategooria
+CREATE TABLE kategooria(
+    kategooriaID int primary key AUTO_INCREMENT,
+    kategooriaNimi varchar(50));
+
 create table retsept(
     retseptID int PRIMARY KEY AUTO_INCREMENT,
     retseptiNimi varchar(100),
