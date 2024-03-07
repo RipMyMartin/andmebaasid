@@ -6,7 +6,7 @@ CREATE TABLE toiduained(
 
 --tabeli yhik loomine
 
-CREATE TABLE yihk(
+CREATE TABLE yhik(
     yhikID int PRIMARY KEY AUTO_INCREMENT,
     yhikNimi varchar(100));
 
